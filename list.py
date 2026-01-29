@@ -1,3 +1,6 @@
+# https://www.hackerrank.com/challenges/python-lists
+
+
 if __name__ == '__main__':
     N = int(input())
     result = []
