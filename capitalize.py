@@ -1,0 +1,33 @@
+# hackerrank.com/challenges/capitalize
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the solve function below.
+
+
+def solve(s):
+    words = s.split(" ")   # preserve spaces
+    result = []
+
+    for w in words:
+        result.append(w.capitalize())
+
+    return " ".join(result)
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
